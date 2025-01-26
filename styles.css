@@ -162,6 +162,33 @@ main p {
     background-color: #74eff5;
 }
 
+/* Promoción */
+.promotion-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f9fff4;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.promotion-container h2 {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.promotion-container p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.promotion-container .restrictions {
+    font-size: 0.9rem;
+    color: #999;
+}
+
 /* Contacto */
 .contacto {
     text-align: center;
