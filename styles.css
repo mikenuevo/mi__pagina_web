@@ -101,12 +101,12 @@ main p {
 }
 
 .hero-text h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin: 0;
 }
 
 .hero-text p {
-    font-size: 1.2em;
+    font-size: 0.9em;
 }
 
 @media (max-width: 768px) {
