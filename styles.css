@@ -52,6 +52,17 @@ main {
     text-align: center;
 }
 
+main h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #333;
+    font-size: 1.2em;
+}
+
 .letra_negra {
     color: #333;
 }
@@ -62,12 +73,15 @@ main {
     text-align: center;
     color: white;
     margin-bottom: 20px;
+    overflow: hidden;
+    min-height: 400px;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .hero-text {
@@ -100,80 +114,52 @@ main {
         font-size: 1.1em;
     }
 
-    .services {
-        flex-direction: column;
-        align-items: center;
+    .hero {
+        min-height: 300px;
     }
 
-    .service {
-        width: 90%;
-        max-width: 400px;
-        padding: 15px;
+    .hero img {
+        height: auto;
     }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 1.5em;
-    }
-
-    .hero-text p {
-        font-size: 1em;
-    }
-
-    main h1 {
-        font-size: 1.8em;
-    }
-
-    main p {
-        font-size: 1em;
-    }
-
-    .service {
-        width: 100%;
-        max-width: 95%;
-        padding: 10px;
-    }
-}
-
-/* Servicios */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.service {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 300px;
-    padding: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.service img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
 }
 
 /* Sección de precios */
+.pricing {
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 .pricing table {
     margin: 0 auto;
     border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    display: block;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pricing table th, .pricing table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.pricing table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.pricing table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pricing table tr:hover {
+    background-color: #74eff5;
 }
 
 /* Contacto */
