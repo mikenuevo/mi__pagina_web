@@ -52,17 +52,6 @@ main {
     text-align: center;
 }
 
-main h1 {
-    color: whitesmoke;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-main p {
-    color: white;
-    font-size: 1.2em;
-}
-
 .letra_negra {
     color: #333;
 }
@@ -85,39 +74,61 @@ main p {
     text-align: center;
 }
 
-.hero-text h1 {
-    font-size: 2.5em;
-    margin: 0;
+
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
 }
 
-.hero-text p {
-    font-size: 1.2em;
-}
 
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
-    nav ul li a {
-        display: block;
+    nav ul li {
+        width: 100%;
         text-align: center;
     }
 
+    nav ul li a {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
     .services {
         flex-direction: column;
         align-items: center;
     }
 
     .service {
-        width: 90%;
-    }
-
-    .hero img {
-        height: auto;
+        width: 100%;
+        max-width: 90%;
     }
 }
+
+
+
+
+
 
 /* Servicios de mensajería */
 .services {
