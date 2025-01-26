@@ -104,6 +104,10 @@ main p {
     font-size: 1.5em;
     margin: 0;
 }
+.hero-text h4 {
+    font-size: 1.5em;
+    margin: 0;
+}
 
 .hero-text p {
     font-size: 0.9em;
